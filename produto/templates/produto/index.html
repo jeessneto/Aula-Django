@@ -3,6 +3,10 @@
 {% block title %}Home{% endblock title %} 
 
 {% block content %} 
-     <h1>Ola mundo Django</h1>
-     
+     <div class="main-content main-condent-list container">
+     {% for produto in produtos %}
+          {%include 'partials/produto.html' %}
+     {% endfor %}
+     </div>
+
 {% endblock content %} 
